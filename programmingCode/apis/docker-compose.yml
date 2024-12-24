@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  fastapi-app:
+    build:
+      context: ./apiRestFast
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    restart: always
+
+#  django-app:
+#    build:
+#      context: ./apiRestDjango
+#      dockerfile: Dockerfile
+#    ports:
+#      - "8002:8000"
+#    restart: always
